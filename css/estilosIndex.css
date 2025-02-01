@@ -1,0 +1,58 @@
+ /* Asegura que el body y html no permitan scroll */
+ html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Desactiva el scroll vertical */
+}
+
+/* Estilo para el contenedor de la imagen */
+.image-container {
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para la imagen */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+}
+
+/* Asegura que la barra de navegación no genere scroll */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.texto_navegador
+{
+    font-family: 'Montserrat';
+    font-size: 24;
+
+}
+
+
+/* Texto sobre la imagen */
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Centrado verticalmente */
+    left: 10%; /* Colocado al lado izquierdo */
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.titulo_inicio
+{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+}

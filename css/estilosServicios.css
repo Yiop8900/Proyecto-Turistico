@@ -1,0 +1,109 @@
+.titulo_inicio
+{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+}
+
+/* Texto sobre la imagen */
+.text-overlay {
+    margin-top: 1%;
+    margin-left: 1%;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.imagen_carrusel {
+    height: 60vh; /* Ocupa el 10% de la altura de la ventana */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor manteniendo la proporción */
+    border-radius: 10%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Aumenta el ancho del área de clic */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(45%) sepia(40%) saturate(2000%) hue-rotate(330deg); /* Cambia el color del ícono a naranja */
+    border-radius: 50%; /* Opcional: redondea las flechas */
+    width: 5rem; /* Ajusta el ancho de la flecha */
+    height: 5rem; /* Ajusta la altura de la flecha */
+}
+
+.carousel-control-prev {
+    left: -4rem; /* Coloca la flecha fuera del carrusel, a la izquierda */
+}
+
+.carousel-control-next {
+    right: -4rem; /* Coloca la flecha fuera del carrusel, a la derecha */
+}
+
+.tarjeta_servicio
+{
+    background-color: #ff5117;
+    color: white;
+    border-radius: 9%;
+}
+
+.texto_tarjeta
+{
+    text-align: center;
+    font-family: 'Montserrat', serif;
+}
+
+
+
+/* estilosServicios.css */
+
+/* Otros estilos... */
+
+/* estilosServicios.css */
+
+/* Otros estilos... */
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .carousel-item {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel-item .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Estilos para el texto superpuesto */
+.imagen_carrusel-wrapper {
+    position: relative;
+}
+
+.imagen_carrusel {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 81, 23, 0.7); /* Fondo semitransparente en naranja */
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    padding: 1rem;
+    text-align: center; /* Centra el texto */
+}
+
+.imagen_carrusel-wrapper:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
