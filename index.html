@@ -16,15 +16,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- ✅ Se añadió SweetAlert2 -->
-    <link rel="stylesheet" href="../css/estilosIndex.css">
-    <link rel="icon" type="image/png" href="../img/Recurso 3.png">
+    <link rel="stylesheet" href="css/estilosIndex.css">
+    <link rel="icon" type="image/png" href="img/Recurso 3.png">
     <title>Viajarte</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img id="logo_celu" src="../img/Recurso 1.png" alt="LOGO" width="50%" height="20%"></a>
+            <a class="navbar-brand" href="index.html"><img id="logo_celu" src="img/Recurso 1.png" alt="LOGO" width="50%" height="20%"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -55,7 +55,7 @@
             function nyancat()
             {
                 // Crear un objeto de audio
-                let audio = new Audio("../audio/nyan-cat_1.mp3"); // 🔹 Cambia la ruta a tu archivo de audio
+                let audio = new Audio("audio/nyan-cat_1.mp3"); // 🔹 Cambia la ruta a tu archivo de audio
 
                 // Reproducir el audio
                 audio.play();
@@ -65,10 +65,10 @@
                     width: 600,
                     padding: "3em",
                     color: "#ff5117",
-                    background: "#ffffff url('../img/Recurso 3 (1).png') center/cover no-repeat",
+                    background: "#ffffff url('img/Recurso 3 (1).png') center/cover no-repeat",
                     backdrop: `
                         rgba(255, 81, 23,0.4)
-                        url("../img/cat-nyan-cat.gif")
+                        url("img/cat-nyan-cat.gif")
                         left top
                         no-repeat
                     `,
