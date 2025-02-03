@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilosSobreNosotros.css"> <!-- Archivo de estilos personalizados -->
     <link rel="icon" type="image/png" href="img/Recurso 3.png">
     <title>Sobre Nosotros</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img id="logo_celu" src="img/Recurso 1.png" alt="LOGO" width="50%" height="20%"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo_celu" src="img/Recurso 1.png" alt="LOGO" width="50%" height="20%">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,5 +37,42 @@
             </div>
         </div>
     </nav>
+
+    <!-- Contenedor personalizado -->
+    <div class="container-custom">
+        <!-- Primera columna (Texto) -->
+        <div class="col">
+            <h1 class="titulo_inicio"  style="text-align: left;">Sobre <br> Nosotros</h1>
+            <div class="tarjeta_nosotros">
+                <p class="texto_tarjeta_nosotros">
+                    Nos enfocamos en diseñar aventuras que no solo conecten con destinos, sino también con la esencia artística, cultural y natural de cada lugar. <br>
+                    Creemos que viajar es mucho más que simplemente visitar un lugar; es una oportunidad para sumergirse en las historias, las tradiciones y las maravillas naturales que definen cada rincón del mundo.
+                </p>
+            </div>
+        </div>
+
+        <!-- Segunda columna (Imagen) -->
+        <div class="col">
+            <img src="img/vertical-low-angle-shot-big-ben-london-blue-sky.jpg" class="img-fluid" alt="Big Ben Londres">
+        </div>
+
+        <!-- Tercera columna (Misión y Visión) -->
+        <div class="col">
+            <!-- Tarjeta Misión -->
+            <div class="tarjeta_nosotros">
+                <h5 class="card-title" style="color: white;">Misión:</h5>
+                <p class="texto_tarjeta_nosotros">
+                    Diseñar experiencias de viaje únicas e inmersivas que permitan a los viajeros explorar destinos como lienzos vivos, fomentando un turismo consciente que enriquezca tanto al visitante como a las comunidades locales, y deje un impacto positivo en el planeta.
+                </p>
+            </div>
+            <!-- Tarjeta Visión -->
+            <div class="tarjeta_nosotros" style="margin-top: 10px;">
+                <h5 class="card-title" style="color: white;">Visión:</h5>
+                <p class="texto_tarjeta_nosotros">
+                    Transformar el turismo en una experiencia artística y significativa, donde cada viaje sea una obra maestra que conecte a las personas con el mundo, promoviendo la creatividad, la sostenibilidad y el respeto por las culturas.
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

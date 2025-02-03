@@ -1,0 +1,110 @@
+.titulo_inicio
+{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    text-align: left;
+}
+
+.tarjeta_nosotros
+{
+    
+    border-radius: 5%;
+    padding: 3%;
+    background-color: #ff5117;
+    font-family: 'Montserrat', serif;
+}
+
+.texto_tarjeta_nosotros
+{
+    color: white;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    text-align: left;
+}
+
+.foto_londres
+{
+    border-radius: 7%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+}
+
+.container-custom {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Montserrat', serif;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+    min-width: 300px; /* Evita que las columnas sean demasiado pequeñas */
+}
+
+.titulo_inicio {
+    font-size: 3rem;
+    color: #ff5117;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+}
+
+.tarjeta_nosotros {
+    background: #ff5117;
+    border-radius: 30px;
+    padding: 20px;
+    font-family: 'Montserrat', serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.img-fluid {
+    width: 100%;
+    border-radius: 7%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {  /* Para tablets */
+
+    .container-custom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .titulo_inicio {
+        font-family: 'Montserrat', serif;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {  /* Para móviles */
+
+    .titulo_inicio {
+        font-family: 'Montserrat', serif;
+        font-size: 2rem;
+    }
+
+    .tarjeta_nosotros {
+        font-family: 'Montserrat', serif;
+        padding: 15px;
+    }
+}
